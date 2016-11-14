@@ -1,0 +1,300 @@
+@font-face {
+    font-family: simplifica;
+    src: url(simplifica.ttf);
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url(MontserratBlack.otf)
+}
+
+article,aside,body,div,footer,header,h1,h2,p {
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #c0c0c0;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    font-family: simplifica;
+}
+
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    height: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.72);
+    z-index: auto;
+}
+li {
+    float:right;
+    font-size: 150%;
+}
+#navname a{
+    position:absolute;
+    top: 0.5px;
+    color: #FFFFFF;
+    font-size: 200%;
+    text-decoration: none;
+    transition: 0.25s ease-in;
+    }
+#navname a:hover{
+    color: #000000;
+}
+#navname{
+    position: absolute;
+    top: 0.65%;
+    left:3%;
+    width:12%;
+    height: 5.5%;
+    border: 3px solid white;
+    border-radius: 25px;
+    transition: 0.25s ease-in;
+}
+#navname:hover{
+    background-color: #FFFFFF;
+}
+li a {
+    position: relative;
+    display: block;
+    color: #FFFFFF;
+    top:0.5px;
+    height:50px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.35em;
+    left: -15px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+li a:active{
+    background-color: black;
+}
+
+/* Image & name */
+.dexter{
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+}
+.dexter h1 {
+    position: absolute;
+    top: 150px; 
+    left: 150px; 
+    width: 400px; 
+    border: 7px solid #FFFFFF;
+    background-color:  rgba(0,0,0,0.4);
+    color: white;
+    font-size: 500%;
+    font-family: montserrat;
+}
+.dexter p{
+    position: absolute;
+    top: 110px;
+    left: 513px;
+    color:white;
+    font-size: 200%;
+}
+/* main content*/
+.maincontent {
+    position: absolute;
+    top:31.3em;
+    height: 40em;
+    width: 100%;
+    background-color: #d9d9d9;
+}
+
+/*Face*/
+.face {
+    position:relative;
+    border: 7px solid #FFFFFF;
+    background-position: 50%;
+    border-radius: 1000%;
+    width: 250px;
+    height: 250px;
+	background: url("face.jpg") no-repeat;
+    top:480px;
+    left:40px;
+	}
+
+/*content*/
+.content{
+    position: relative;
+    text-align: left;
+    top: 14em;
+    left:350px;
+    width: 70%;
+}
+.content p{
+    color: #000000;
+    font-size: 150%;
+    font-family: simplifica;
+}
+
+/*Photos*/
+.photos{
+    position:absolute;
+    top:60em;
+    height: 40em;
+    width:100%;
+    background-color: #cccccc;
+    clear:left;
+}
+.photos h1 {
+    position: relative;
+    margin: 0.2em 0.5em;
+    font-family: montserrat;
+    font-size: 250%;
+    color: #000000;
+}
+
+/*blogs*/
+.blog{
+    position: absolute;
+    top: 100em;
+    height: 30em;
+    width: 100%;
+    background-color: #c0c0c0;
+}
+.blog h1{
+    position: relative;
+    margin: 0.2em 0.5em;
+    font-family: montserrat;
+    font-size: 250%;
+    color: #000000;
+}
+/* blog 1*/
+.blog1{
+    position: relative;
+    float:left;
+    width:22em;
+    top: 1em;
+    left:10em;
+    vertical-align: top; 
+    height:auto !important; 
+}
+.blog1content {
+    display:none; 
+    height:auto;
+    margin:0;
+}
+.show {
+    display: none;
+}
+.hide:target + .show {
+    display: inline; 
+}
+.hide:target {
+    display: none; 
+    height:0;
+}
+.hide:target ~ .blog1content {
+    display:inline; 
+}
+.blog1 img{
+    position: inherit;
+    height:20em;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+}
+.blog1desc{
+    position:absolute;
+    height: 100px;
+    width: 100%;
+    top:0.5px;
+    bottom:1px;
+    left:0.5px;
+    right:0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.72);
+    color: #000000;
+    visibility: hidden;
+    opacity:0;
+    transition: all 0.25s ease;
+}
+.blog1:hover .blog1desc{
+    visibility: visible;
+    opacity:1;
+}
+.blog1content p {
+    background: #FFFFFF;
+	height: auto;
+}
+
+/* Blog 2*/
+.blog2{
+    position: inherit;
+    width:22em;
+    top: 5em;
+    right:10em;
+    vertical-align: top; 
+    height:auto !important; 
+}
+.blog2content {
+    display:none; 
+    height:auto;
+    margin:0;
+}
+.show {
+    display: none;
+}
+.hide:target + .show {
+    display: inline; 
+}
+.hide:target {
+    display: none; 
+    height:0;
+}
+.hide:target ~ .blog2content {
+    display:inline; 
+}
+.blog2 img {
+    position: inherit;
+    height:20em;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 0.5em;
+}
+.blog2desc {
+    position:absolute;
+    height: 100px;
+    width: 100%;
+    top:0.5px;
+    bottom:1px;
+    left:0.5px;
+    right:0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(255,255,255,0.72);
+    color: #000000;
+    visibility: hidden;
+    opacity:0;
+    transition: all 0.25s ease;
+}
+.blog2:hover .blog2desc{
+    visibility: visible;
+    opacity:1;
+}
+.blog2content p {
+    background: #FFFFFF;
+	height: auto;
+}
