@@ -15,11 +15,14 @@ article,aside,body,div,footer,header,h1,h2,p {
 
 body{
     background-color: #c0c0c0;
+    min-height: 100%;
 }
 
 .container{
     max-width: 1280px;
     margin: auto;
+    overflow: auto;
+    padding-bottom: 150px;
     font-family: simplifica;
 }
 
@@ -38,12 +41,9 @@ li {
     font-size: 150%;
 }
 #navname a{
-    position:relative;
-    top: 0.5px;
-    left: 0px;
     width: 100%;
     color: #FFFFFF;
-    font-size:2em;
+    font-size:32px;
     text-decoration: none;
     transition: 0.25s ease-in;
     }
@@ -51,9 +51,7 @@ li {
     color: #000000;
 }
 #navname{
-    position: relative;
-    top: 9%;
-    left: 3%;
+    margin: 0.35% 1%;
     width: 12%;
     border: 3px solid white;
     border-radius: 25px;
@@ -63,24 +61,23 @@ li {
     background-color: #FFFFFF;
 }
 li a {
-    position: relative;
+    height: 1.8em;
+    margin: 0.35% auto;
     display: block;
-    color: #FFFFFF;
-    top:0.5px;
-    height:50px;
+    color: #e6e6e6;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 0.35em;
-    left: -15px;
     text-decoration: none;
     vertical-align: middle;
+    transition: 0.15 ease;
 }
 li a:hover {
-    background-color: #555;
-    color: white;
+    background-color: transparent;
+    color: #FFFFFF;
 }
 li a:active{
-    background-color: black;
+    color: #8c8c8c;
 }
 
 /* Image & name */
@@ -88,6 +85,10 @@ li a:active{
     position: absolute;
     z-index: -1;
     text-align: center;
+}
+.dexter img{
+    width: 1280px;
+    height:500px;
 }
 .dexter h1 {
     position: absolute;
@@ -110,32 +111,31 @@ li a:active{
 /* main content*/
 .maincontent {
     position: absolute;
-    top:31.3em;
     height: 40em;
-    width: 100%;
+    margin: 450px auto; 
+    width: 1280px;
     background-color: #d9d9d9;
 }
 
 /*Face*/
 .face {
     position:relative;
+    float: left;
     border: 7px solid #FFFFFF;
     background-position: 50%;
     border-radius: 1000%;
     width: 250px;
     height: 250px;
 	background: url("face.jpg") no-repeat;
-    top:480px;
-    left:40px;
+    margin: 43% 0 0 3%;
 	}
 
 /*content*/
 .content{
     position: relative;
     text-align: left;
-    top: 14em;
-    left:350px;
     width: 70%;
+    margin: 38% 0 0 26.5%; 
 }
 .content p{
     color: #000000;
@@ -145,10 +145,10 @@ li a:active{
 
 /*Photos*/
 .photos{
-    position:absolute;
-    top:60em;
-    height: 40em;
-    width:100%;
+    position: absolute;
+    margin: 2.2% 0 0 0;
+    height: 20em;
+    width: 1280px;
     background-color: #cccccc;
     clear:left;
 }
@@ -162,14 +162,14 @@ li a:active{
 
 /*blogs*/
 .blog{
-    position: absolute;
-    top: 100em;
+    position: inherit;
+    margin: 27.5% 0 0 0;
     height: 30em;
     width: 100%;
     background-color: #c0c0c0;
 }
 .blog h1{
-    position: relative;
+    position: inherit;
     margin: 0.2em 0.5em;
     font-family: montserrat;
     font-size: 250%;
@@ -179,9 +179,8 @@ li a:active{
 .blog1{
     position: relative;
     float:left;
-    width:22em;
-    top: 1em;
-    left:10em;
+    width:360px;
+    margin: 2% 10%;
     vertical-align: top; 
     height:auto !important; 
 }
@@ -214,10 +213,10 @@ li a:active{
     position:absolute;
     height: 100px;
     width: 100%;
-    top:0.5px;
-    bottom:1px;
-    left:0.5px;
-    right:0;
+    top: 0.7px;
+    right: 1px;
+    bottom: 0.5px;
+    left: 1px;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     line-height: 100px;
@@ -240,10 +239,10 @@ li a:active{
 
 /* Blog 2*/
 .blog2{
-    position: inherit;
-    width:22em;
-    top: 5em;
-    right:10em;
+    position: relative;
+    float:left;
+    width:360px;
+    margin: 2% 0 0 13.5%;
     vertical-align: top; 
     height:auto !important; 
 }
@@ -276,7 +275,7 @@ li a:active{
     position:absolute;
     height: 100px;
     width: 100%;
-    top:0.5px;
+    top:0.7px;
     bottom:1px;
     left:0.5px;
     right:0;
@@ -299,3 +298,25 @@ li a:active{
     background: #FFFFFF;
 	height: auto;
 }
+
+
+/* CONTACT PAGE */
+
+/* Form */
+input, textarea{
+    width: 300px;
+}
+.sendmessage {
+   width :300px;
+}
+.sendmessage p{
+   text-align: center;
+}
+
+footer {
+    position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;
+    text-align: center;
+} 
