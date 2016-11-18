@@ -5,7 +5,12 @@
 
 @font-face{
     font-family: montserrat;
-    src: url(MontserratBlack.otf)
+    src: url(MontserratBlack.otf);
+}
+
+@font-face {
+    font-family: beastform;
+    src: url(beastform.regular.ttf);
 }
 
 article,aside,body,div,footer,header,h1,h2,p {
@@ -41,19 +46,23 @@ li {
     font-size: 150%;
 }
 #navname a{
+    display: block;
+    font-family: beastform;
     width: 100%;
     color: #FFFFFF;
     font-size:32px;
+    text-align: center;
     text-decoration: none;
     transition: 0.25s ease-in;
+    line-height: 1.2em;
     }
 #navname a:hover{
     color: #000000;
 }
 #navname{
-    margin: 0.35% 1%;
+    margin: 0.35% 0. %;
     width: 12%;
-    border: 3px solid white;
+    border: 3px solid #FFFFFF;
     border-radius: 25px;
     transition: 0.25s ease-in;
 }
@@ -87,7 +96,7 @@ li a:active{
     text-align: center;
 }
 .dexter img{
-    width: 1280px;
+    width: 1262.5px;
     height:500px;
 }
 .dexter h1 {
@@ -108,12 +117,13 @@ li a:active{
     color:white;
     font-size: 200%;
 }
+
 /* main content*/
 .maincontent {
     position: absolute;
     height: 40em;
     margin: 450px auto; 
-    width: 1280px;
+    width: 1262.5px;
     background-color: #d9d9d9;
 }
 
@@ -148,7 +158,7 @@ li a:active{
     position: absolute;
     margin: 2.2% 0 0 0;
     height: 20em;
-    width: 1280px;
+    width: 1262.5px;
     background-color: #cccccc;
     clear:left;
 }
@@ -162,8 +172,8 @@ li a:active{
 
 /*blogs*/
 .blog{
-    position: inherit;
-    margin: 27.5% 0 0 0;
+    position: relative;
+    margin: 20em 0 0 0;
     height: 30em;
     width: 100%;
     background-color: #c0c0c0;
@@ -171,6 +181,7 @@ li a:active{
 .blog h1{
     position: inherit;
     margin: 0.2em 0.5em;
+    padding:2e;
     font-family: montserrat;
     font-size: 250%;
     color: #000000;
@@ -249,7 +260,7 @@ li a:active{
 .blog2content {
     display:none; 
     height:auto;
-    margin:0;
+    margin:1em 0 0 0;
 }
 .show {
     display: none;
@@ -297,6 +308,7 @@ li a:active{
 .blog2content p {
     background: #FFFFFF;
 	height: auto;
+    font-size: 3em;
 }
 
 
@@ -313,6 +325,7 @@ input, textarea{
    text-align: center;
 }
 
+/* FOOTER */
 footer {
     position: relative;
 	margin-top: -150px; /* negative value of footer height */
