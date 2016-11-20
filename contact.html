@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Contact Me!</title>
-      <!-- 
-         Dexter's Portfolio cum Blog
-         Filename: contact.html
 
-         Author: Dexter Gui
+<head>
+   <title>Dexter? Who's that?</title>
+   <!-- 
+         Dexter's Portfolio cum Blog
+         Filename: index.html
+
+         Author: 1625509
          Date:  9 November 2016 
       -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <link rel="stylesheet" href="styles.css">
-   </head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <link href="" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css"> </head>
+
+<body>
+   <section class="maincontainer">
+      <nav class="nav">
+         <ul>
+            <li><a href="contact.html">Contact Me!</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#photo">Photos</a></li>
+            <li><a href="index.html#blog">Blogs</a></li>
+            <li><a href="index.html">Home</a></li>
+            <p id="navname"><a href="https://www.google.com.sg/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=dexter%20gui">Dexter Gui</a></p>
+         </ul>
+      </nav>
+      
+      <figure id="contactbg">
+      <img src="contactbg.jpg" alt="A scenery in shanghai"/>
+      </figure>   
    
-   <body>
-   <div class ="container">
-      
-      <div class="nav">  
-          <ul>
-              <li><a href="contact.html">Contact Me!</a></li>
-              <li><a href="news.asp">Portfolio</a></li>
-              <li><a href="contact.asp">Photos</a></li>
-              <li><a href="about.asp">Blogs</a></li>
-              <li><a href="index.html">Home</a></li>
-              <p id="navname"><a href="https://www.google.com.sg/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=dexter%20gui">Dexter Gui</a></p>
-          </ul>
-      </div>
-      
-      <form class="sendmessage">
-      <p>Mr/Mrs.<br></p>
-      <input type="text" name="name" value="Your name here"><br>
-      <p>- Email -<br></p>
-      <input type="text" name="email" value="Your email here"><br>
-      <p>- I'm all ears! -<br></p>
-      <input type="text" name="sendmessage" value="What did you have to say?"><br>  
-      </form>
-      
-      <aside class="contactme">
-         <img class="contactmeface" src=""/>
-         <section class="socialmediaicon">
-         <a img class="" src=""/>
-         <img class="" src=""/>
-         <img class="" src=""/>
-         </section>
-         <img class="" src=""/>
-         <p>+65 8888 2222</p>
-         <img class="" src=""/>
-         <p>majortanopss@gmail.com</p>
+      <aside class="input">
+         <article id="nameinput">
+         <p>Mr/Ms.?</p>
+         <textarea id="name" cols="40" rows="1" placeholder="your name here" data-autosize-on="true"></textarea>
+         </article>
+         <article id="emailinput">
+         <p>Email?</p>   
+         <textarea id="email" cols="40" rows="1" placeholder="your email here" data-autosize-on="true"></textarea>
+         </article>
+         <article id="messageinput">
+         <p>I'm all ears.</p>
+         <textarea id="message" cols="40" rows="6" placeholder="what did you have to say..." data-autosize-on="true"></textarea>
+         </article>   
       </aside>
       
-   </div>
+      <article class="contactdetails">
+         <img id="contactsface" src="contactface.JPG" alt="My face"/>
+         <article class="contactdetailssocial">
+         <a id="gbackground" href="https://plus.google.com/113191452515383494518"><img id="google" src="logo/google-plus.png"/></a>
+         <a href="https://www.facebook.com/majortan.luvskids"><img id="facebook" src="logo/facebook.png"/></a>
+         <a href="https://twitter.com/blek_salami"><img id="twitter" src="logo/twitter-logo-silhouette.png"></a>
+         </article>
+      </article>
+   </section>
    
-   </body>
+   <footer>
+      <figure class="footericons">
+         <a id="gbackground" href="https://plus.google.com/113191452515383494518"><img id="google" src="logo/google-plus.png"/></a>
+         <a href="https://www.facebook.com/majortan.luvskids"><img id="facebook" src="logo/facebook.png"/></a>
+         <a href="https://www.instagram.com/minor.tan/"><img id="instagram" src="logo/instagram-logo.png"/></a>
+         <a href="https://twitter.com/blek_salami"><img id="twitter" src="logo/twitter-logo-silhouette.png"></a>
+         <a href="https://www.youtube.com/user/DexterGui"><img id="youtube" src="logo/youtube-logo.png"/></a>
+      </figure>
+      <h6>DEXTER GUI</h6>
+      <p>&copy; Copyright 2016. All rights reserved.</p>
+   </footer>
+</body>
+
+</html>
