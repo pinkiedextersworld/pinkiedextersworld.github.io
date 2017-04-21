@@ -2,88 +2,101 @@
 <html lang="en">
 
 <head>
-   <title>Dexter's Portfolio</title>
-   <!-- 
-         Dexter's Portfolio cum Blog
-         Filename: portfolio.html
-         Author: 1625509
-         Date:  9 November 2016 
-      -->
-   <meta charset="utf-8">
-   <link rel="shotcut icon" href="pics/myicon.ico" />
-   <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" href="styles.css"> </head>
-
+    <Title>Dexter Gui</Title>
+    <!--
+        Dexter's Portfolio cum Blog
+        Filename:blogpage.html
+        Author: 1625509
+        Date: 10 Feburary 2017
+    -->
+    <meta charset="utf-8">
+    <link rel="icon" href="pics/myicon.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> </head>
 <body>
-   <section class="maincontainer">
-      
-      <!-- Navigation Bar -->
-      <nav class="nav">
-         <ul>
-            <li><a href="about.html#contact">Contact Me!</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="index.html#photo">Photos</a></li>
-            <li><a href="index.html#blog">Blogs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Home</a></li>
-            <p id="navname"><a href="index.html">Dexter Gui</a></p>
-         </ul>
-      </nav>
-      
-      <!-- Full Body Photo of me -->
-      <figure>
-      <aside class="fullbody"> <img src="pics/fullbody.jpg" alt="A full body picture of me" /> </aside>
-      </figure>
-      
-      <!-- My portfolio -->
-      <article class="portfolio">
-         <h1>CERTIFICATIONS</h1> 
-         <figure>
-            <img id="photocert" src="pics/photographycert.jpg" alt="Photography course certificate"/>
-         </figure>   
-         <p id="photography"><b>Photography.</b>
-            <br>Since young, I have always been fascinated by the world of photography. The placement of every tiny detail in a photo would thrill me. I believed that the meaning of my life was photograhpy so, i seized every chance i had to go for photography courses. This one is achieved at a young age of primary 4.</p> 
-         <figure>
-            <img id="comcert" src="pics/computercert.jpg" alt="Computer Skills Certificate" />
-         </figure>
-         <p id="computerskills"><b>Computer Skills.</b>
-            <br>Apart from photography, i had one other interest. It was computers. My attention was always drawn in to anything computer related. Each time my father opened up a CPU, I was always the most excited. This pushed me to participate in various international assesments for computer skills. I am actually very proud of this one. It signifies that I scored in the top 10% of the whole sinagpore!</p>
-         <h1>EXPERIENCES</h1>
-         <article class="experience1"> 
-            <figure>
-               <img src="pics/companylogo.jpg" alt="Image of the logo designed by me" />
-            </figure>
-            <p><b>Designed a company logo.</b>
-               <br>Over the vacation, I was reccomended to create a company logo for a start up company by word of mouth. The company specialized in a variety of electronic, hence they asked for the logo to be abstract. It was a good experience communicating with the company to achieve what they were looking for.</p>
-         </article>
-         <article class="experience2"> 
-            <figure>
-               <img src="pics/uniform.JPG" alt="Image of my fairprice uniform" />
-            </figure>
-            <p><b>Fairprice</b>
-               <br>Over my secondary 4 vacations, I went to the nearby supermarkets to look for a job. Fairprice was the one that hired me. I worked for approximately 6 months in the outlet, learning much more than what was offered in school. My teachers at the workplace was the women who worked there for decades, and what they taught was life lessons.</p>
-         </article>
-         <article class="experience3"> 
-            <figure>
-               <img src="pics/trophy.JPG" alt="Image of the trophy" />
-            </figure>
-            <p><b>Battery powered car competition.</b>
-               <br>My talent for creating was brought to the school's attention, which gave me a chance to participate in an interschool competion. I spent a semester building and designing a battery powered motor car to compete with the rest of singapore. I participated in this competition for 2 consecutive years. In both years, I won an award. In the first year, the speed award for the fastest car. In the second, the award for the best design.</p>
-         </article>
-      </article>
-   </section>
-   
-   <!-- Footer -->
-   <footer>
-      <figure class="footericons">
-         <a class="footericonbackground" href="https://plus.google.com/113191452515383494518"><img class="footericon" src="logo/google-plus.png" alt="icon for google"/></a>
-         <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids"><img class="footericon" src="logo/facebook.png" alt="icon for facebook"/></a>
-         <a class="footericonbackground" href="https://www.instagram.com/minor.tan/"><img class="footericon" src="logo/instagram-logo.png" alt="icon for instagram"/></a>
-         <a class="footericonbackground" href="https://twitter.com/blek_salami"><img class="footericon" src="logo/twitter-logo-silhouette.png" alt="icon for twitter"></a>
-         <a class="footericonbackground" href="https://www.youtube.com/user/DexterGui"><img class="footericon" src="logo/youtube-logo.png" alt="icon for youtube"/></a>
-      </figure> <a id="footername" href="index.html"><h6 id="footernameh6">Dexter&emsp;Gui</h6></a>
-      <p>&copy; Copyright 2016. All rights reserved.</p>
-   </footer>
+    <section class="maincontainer">
+        <!--Navigation Bar-->
+        <header>
+            <a id="navlogo" href="index.html"><img src="pics/logo.png" alt="Logo" title="Home"/></a>
+        </header>
+        <nav id="navigationbar">
+            <ul>
+               <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+               <li><a href="index.html" class="navcont">Home</a></li>
+               <li><a href="about.html" class="navcont">About</a></li>
+               <li><a href="blogpage.html" class="navcont">Blogs</a></li>
+               <li><a href="portfolio.html" class="navcont">Portfolio</a></li>
+               <li><a href="about.html#contact" class="navcont">Contact Me</a></li>
+            </ul>
+        </nav>
+        <figure id="menuopen">
+            <span onclick="openNav()">
+                <img src="pics/menu.png" alt="open menu" class="menu"/></span>
+        </figure>
+        <!--Header-->
+        <header id="portfolioheader">
+        <h6>This is what i'm worth.</h6>
+        <p>Below is my experiences and certifications. If interested in anyways after reading this page, head over to contact me.</p>
+        <hr>
+        </header>
+        <!--Certifiactions-->
+        <article class="portfoliosections">
+        <h5>CERTIFICATIONS</h5>
+        <article id="certifications">
+            <article id="photography">
+            <img id="photocert" src="pics/photographycert.jpg" alt="photography cert"/>
+            <p id="photocertdesc"><b>Photography.</b><br>Since young, I have always been fascinated by the world of photography. The placement of every tiny detail in a photo would thrill me. I believed that the meaning of my life was photograhpy so, i seized every chance i had to go for photography courses. This one is achieved at a young age of primary 4.</p>
+            </article>
+            <article id="computerskills">
+            <img id="comcert" src="pics/computercert1.jpg" alt="computer skills cert"/>
+            <p id="comcertdesc"><b>Computer Skills.</b><br>Apart from photography, i had one other interest. It was computers. My attention was always drawn in to anything computer related. Each time my father opened up a CPU, I was always the most excited. This pushed me to participate in various international assesments for computer skills. I am actually very proud of this one. It signifies that I scored in the top 10% of the whole sinagpore!</p>
+            </article>
+        </article>
+        </article>
+        <!--Experiences-->
+        <article class="portfoliosections">
+        <h5>MY EXPERIENCE. ENTICED YET?</h5>
+        <article id="experiencetabs">
+            <div class="blogbox experienceinfo"> 
+                <img src="pics/companylogo.png" alt="a logo i designed"/>
+                <div class="overbox experienceoverbox">
+                    <div class="title overlay">Designed a company logo.</div>
+                    <div class="continue overlay">Over the vacation, I was reccomended to create a company logo for a start up company by word of mouth. The company specialized in a variety of electronic, hence they asked for the logo to be abstract. It was a good experience communicating with the company to achieve what they were looking for.
+                    </div>
+                </div>
+            </div>
+            <div class="blogbox experienceinfo"> 
+                <img src="pics/uniform.JPG" alt="My work uniform"/>
+                <div class="overbox experienceoverbox">
+                    <div class="title overlay">Fairprice.</div>
+                    <div class="continue overlay">Over my secondary 4 vacations, I went to the nearby supermarkets to look for a job. Fairprice was the one that hired me. I worked for approximately 6 months in the outlet, learning much more than what was offered in school. My teachers at the workplace was the women who worked there for decades, and what they taught was life lessons.
+                    </div>
+                </div>
+            </div>
+            <div class="blogbox experienceinfo"> 
+                <img src="pics/trophy.JPG" alt="My trophy"/>
+                <div class="overbox experienceoverbox">
+                    <div class="title overlay">Designed a company logo.</div>
+                    <div class="continue overlay">My talent for creation was brought to the school's attention, which gave me a chance to participate in an interschool competion. My partner and I spent a semester building and designing a battery powered motor car to compete. We participated in this competition for 2 consecutive years. In both years, we won an award. In the first year, the speed award for the fastest car. In the second, the award for the best design.
+                    </div>
+                </div>
+            </div>
+        </article>
+        </article>
+        <!--Footer-->
+    <footer>
+       <a id="footerlogo" href="index.html" title="logo"><img src="pics/logo.png" alt="My logo"/></a>
+        <article id="footerlinks">
+           <a href="mailto:guigui88.16@ichat.sp.edu.sg">GUIGUI88.16@ICHAT.SP.EDU.SG</a><br><br><br>
+           <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids">FACEBOOK</a>
+           <a class="footericonbackground" href="https://plus.google.com/113191452515383494518">GOOGLE</a>
+           <a class="footericonbackground" href="https://twitter.com/blek_salami">TWITTER</a>
+       </article>
+    </footer>
+    </section>
+    <script src="hamburger.js"></script>
 </body>
-
 </html>

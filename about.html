@@ -1,128 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <title>Dexter? Who's that?</title>
-   <!-- 
-         Dexter's Portfolio cum Blog
-         Filename: about.html
-         Author: 1625509
-         Date:  9 November 2016 
-      -->
-   <meta charset="utf-8">
-   <link rel="shotcut icon" href="pics/myicon.ico" />
-   <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" href="styles.css"> </head>
-
+    <title>Dexter Gui</title>
+    <!--
+        Dexter's Portfolio cum Blog
+        Filename: about.html
+        Author: Dexter Gui
+        Date: 10 Feburary 2017
+    -->
+    <meta charset="utf-8">
+    <link rel="icon" href="pics/myicon.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-   <section class="maincontainer">
-      
-      <!-- Navigation Bar -->
-      <nav class="nav">
-         <ul>
-            <li><a href="about.html#contact">Contact Me!</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="index.html#photo">Photos</a></li>
-            <li><a href="index.html#blog">Blogs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Home</a></li>
-            <p id="navname"><a href="index.html">Dexter Gui</a></p>
-         </ul>
-      </nav>
-      
-      <!-- About Me -->
-      <article id="aboutme">
-         <h1>About Me</h1>
-         <p id="firstpara">My name is <b>Dexter Gui</b> and I'm currently in Singapore Polytechnic. I am born and raised in Singapore. In the early years, I lived in Upper Thompson Road with my grandparents. Then, I moved to Bishan for a few months and proceeded to move to Khatib where I reside now.</p>
-         <p id="secondpara">
-            <br>I made a decision to further my studies in Infocomm after my secondary years. This decision led me to be furthering my studies in Singapore Polytechnic's Diploma in Infocomm Security Management an enjoy new experiences.
-            <br>
-            <br> Today, I am still studying in Singapore Polytechnic and learning more new things.</p>
-         <figure><img src="pics/face.jpg" alt="Image of me" /></figure>
-      </article>
-      
-      <!-- Connect With Me (Social Media) -->
-      <article id="connectwithme">
-         <h1>Connect with me:</h1>
-         <a href="https://www.youtube.com/user/DexterGui"><img class="connecticons" src="logo/youtube-logoblack.png" alt="youtube icon" />
-            <p class="connecttext">Youtube</p>
-         </a>
-         <a href="https://plus.google.com/113191452515383494518"><img class="connecticons" src="logo/google-plusblack.png" alt="google icon" />
-            <p class="connecttext">Google +</p>
-         </a>
-         <a href="https://www.instagram.com/minor.tan/"><img class="connecticons" src="logo/facebookblack.png" alt="Facebook icon" />
-            <p class="connecttext">Facebook</p>
-         </a>
-         <a href="https://www.instagram.com/minor.tan/"><img class="connecticons" src="logo/instagram-logoblack.png" alt="Instagram icon" />
-            <p class="connecttext">Instagram</p>
-         </a>
-         <a href="https://twitter.com/blek_salami"><img class="connecticons" src="logo/twitter-logo-silhouetteblack.png" alt="Twitter icon" />
-            <p class="connecttext">Twitter</p>
-         </a>
-      </article>
-      
-      <!-- Family Members -->
-      <article id="myfamily">
-         <h1>My Family</h1>
-         <p>I am loved by many, however, these few are the ones that love me the most.</p>
-         <figure> <img class="familypic" src="pics/mother.jpg" alt="picture of my mother" /> </figure>
-         <figure> <img class="familypic" src="pics/father.jpg" alt="picture of my father" /> </figure>
-         <figure> <img class="familypic" src="pics/sister.jpg" alt="picture of my sister" /> </figure>
-         <figure> <img class="familypic" src="pics/brother.jpg" alt="picture of my brother" /> </figure>
-         <p id="motherdesc"><b>Mora Yeong</b>
-            <br>Mother.</p>
-         <p id="fatherdesc"><b>Kelvin Gui</b>
-            <br>Father.</p>
-         <p id="sisterdesc"><b>Jilane Gui</b>
-            <br>Sister.</p>
-         <p id="brotherdesc"><b>Bryant Gui</b>
-            <br>Brother.</p>
-      </article>
-      
-      <!-- Contact me -->
-      <article id="contact">
-         <h1>Contact Me</h1>
-         <p>Feel free to contact me if you have any questions. I occasionally take freelance logo design and perform design audits.</p>
-         <p>
-            <br>Mr/Ms.?</p>
-         <textarea id="name" cols="40" rows="1" placeholder="your name here" data-autosize-on="true"></textarea>
-         <p>
-            <br>Email?</p>
-         <textarea id="email" cols="40" rows="1" placeholder="your email here" data-autosize-on="true"></textarea>
-         <p>
-            <br>Subject?</p>
-         <input list="subject">
-            <datalist id="subject">
-            <option value="I want to hire you!">
-            <option value="I just want to say hi!">
-            <option value="There is a bug in the website.">
-            <option value="Can I get some advice?">
-            </datalist>
-         <p>
-            <br>I'm all ears.</p>
-         <textarea id="message" cols="40" rows="6" placeholder="what did you have to say..." data-autosize-on="true"></textarea>
-         <form>
-            <article id="contactsubmit">
-               <a href="">
-                  <p>submit</p>
-               </a>
+    <section class="maincontainer">
+        <!--Navigation Bar-->
+        <header>
+            <a id="navlogo" href="index.html"><img src="pics/logo.png" alt="Logo" title="Home"/></a>
+        </header>
+        <nav id="navigationbar">
+            <ul>
+               <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+               <li><a href="index.html" class="navcont">Home</a></li>
+               <li><a href="about.html" class="navcont">About</a></li>
+               <li><a href="blogpage.html" class="navcont">Blogs</a></li>
+               <li><a href="portfolio.html" class="navcont">Portfolio</a></li>
+               <li><a href="about.html#contact" class="navcont">Contact Me</a></li>
+            </ul>
+        </nav>
+        <figure id="menuopen">
+            <span onclick="openNav()">
+                <img src="pics/menu.png" alt="open menu" class="menu"/></span>
+        </figure>
+        <!--Text Banner -->
+        <section id="textbanner">
+            <h1>About Me</h1>
+            <article>
+                <p><i>I am a year 1 student in Singapore Polytechnic studying Infocomm Security Management.</i></p>
+                <hr>
+               <p id="textbannerreadmore">Read about me.</p>
             </article>
-         </form>
-      </article>
-      
-   </section>
-   
-   <!-- Footer -->
-   <footer>
-      <figure class="footericons">
-         <a class="footericonbackground" href="https://plus.google.com/113191452515383494518"><img class="footericon" src="logo/google-plus.png" alt="icon for google"/></a>
-         <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids"><img class="footericon" src="logo/facebook.png" alt="icon for facebook"/></a>
-         <a class="footericonbackground" href="https://www.instagram.com/minor.tan/"><img class="footericon" src="logo/instagram-logo.png" alt="icon for instagram"/></a>
-         <a class="footericonbackground" href="https://twitter.com/blek_salami"><img class="footericon" src="logo/twitter-logo-silhouette.png" alt="icon for twitter"></a>
-         <a class="footericonbackground" href="https://www.youtube.com/user/DexterGui"><img class="footericon" src="logo/youtube-logo.png" alt="icon for youtube"/></a>
-      </figure> <a id="footername" href="index.html"><h6 id="footernameh6">Dexter&emsp;Gui</h6></a>
-      <p>&copy; Copyright 2016. All rights reserved.</p>
-   </footer>
-</body>
-
+        </section>
+        <!--Picture1-->
+        <figure id="imagebanner">
+        <img src="pics/aboutbanner.jpg" alt="me and my friends"/>
+        </figure>
+        <!--Bio 1-->
+        <article id="aboutbio1">
+            <p><b>My name is Dexter Gui.</b><br><br> I am born and raised in Singapore. In the early years, I lived in Upper Thompson Road with my grandparents. Then, I moved to Bishan for a few months and proceeded to move to Khatib where I reside now.</p>
+        <figure>
+            <img id="bio1img1" src="pics/skiing.jpg" alt="skiing"/>
+            <img id="bio1img2" src="pics/dinner.jpg" alt="dinner with friends"/>
+            <img id="bio1img3" src="pics/byejez.jpg" alt="bye jezerene"/>
+        </figure>
+        </article>
+        <!--Bio 2-->
+        <article id="aboutbio2">
+            <p><b>My Family.</b><br><br>I am loved by many, however, these few are the ones that love me the most.</p>
+            <figure>
+                <img src="pics/family.jpg" alt="Father"/>
+            </figure>
+        </article>
+        <!--bio 3-->
+        <article id="aboutbio3">
+            <p><b>Studies.</b><br><br>I made a decision to further my studies in Infocomm after my secondary years. This decision led me to be furthering my studies in Singapore Polytechnic's Diploma in Infocomm Security Management an enjoy new experiences. Today, I am still studying in Singapore Polytechnic and learning more new things.</p><hr>
+        </article>
+        <!--Contact-->
+        <article id="contact">
+            <p><b>Contact Me</b><br><br>Feel free to contact me if you have any questions. I occasionally take freelance logo design and perform design audits.</p>
+            <form action="results.html">
+              <fieldset>
+                <legend>Contact form</legend>
+                <label for="name">Mr/Mrs.<br>
+                <input type="text" id="name" name="name" placeholder="name?"></label>
+                <br>
+                <label for="email">Email<br>
+                <input id="email" type="email" name="email" placeholder="email?"></label>
+                <br>
+                <label for="topic">
+                What is this Regarding?<br>
+                    <input id="topic" list="subject" placeholder="Please select an option." name="subject">
+                    <datalist id="subject">
+                        <option value="I want to hire you!">
+                        <option value="I just want to say hi!">
+                        <option value="There is a bug in the website.">
+                        <option value="Can I get some advice?">
+                    </datalist></label><br>
+                <label for="message">I'm all ears<br>
+                <textarea name="message" id="message" cols="75" rows="6" placeholder="what did you have to say..." data-autosize-on="true"></textarea></label><br><br>
+                <input id="submitbutn" type="submit" value="Submit">  
+              </fieldset>
+            </form>
+        </article>
+    <!--Footer-->
+    <footer>
+       <a id="footerlogo" href="index.html" title="logo"><img src="pics/logo.png" alt="My logo"/></a>
+        <article id="footerlinks">
+           <a href="mailto:guigui88.16@ichat.sp.edu.sg">GUIGUI88.16@ICHAT.SP.EDU.SG</a><br><br><br>
+           <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids">FACEBOOK</a>
+           <a class="footericonbackground" href="https://plus.google.com/113191452515383494518">GOOGLE</a>
+           <a class="footericonbackground" href="https://twitter.com/blek_salami">TWITTER</a>
+       </article>
+    </footer>
+    </section>
+    <script src="hamburger.js"></script>
+    </body>
 </html>

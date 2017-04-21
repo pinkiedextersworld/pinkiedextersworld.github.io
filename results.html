@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>Dexter Gui</Title>
+    <!--
+        Dexter's Portfolio cum Blog
+        Filename:blogpage.html
+        Author: 1625509
+        Date: 10 Feburary 2017
+    -->
+    <meta charset="utf-8">
+    <link rel="icon" href="pics/myicon.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <section class="maincontainer">
+        <!--Navigation Bar-->
+        <header>
+            <a id="navlogo" href="index.html"><img src="pics/logo.png" alt="Logo" title="Home"/></a>
+        </header>
+        <nav id="navigationbar">
+            <ul>
+               <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+               <li><a href="index.html" class="navcont">Home</a></li>
+               <li><a href="about.html" class="navcont">About</a></li>
+               <li><a href="blogpage.html" class="navcont">Blogs</a></li>
+               <li><a href="portfolio.html" class="navcont">Portfolio</a></li>
+               <li><a href="about.html#contact" class="navcont">Contact Me</a></li>
+            </ul>
+        </nav>
+        <figure id="menuopen">
+            <span onclick="openNav()">
+                <img src="pics/menu.png" alt="open menu" class="menu"/></span>
+        </figure>
+        <!--Results-->
+        <article id="contentstart">
+            <h2>Your form has been submitted</h2>
+            <div class="results">
+                <h3>You entered the following data:</h3>
+                <script src="formresults.js"></script>
+            </div>
+        </article>
+    <!--Footer-->
+    <footer>
+       <a id="footerlogo" href="index.html" title="logo"><img src="pics/logo.png" alt="My logo"/></a>
+        <article id="footerlinks">
+           <a href="mailto:guigui88.16@ichat.sp.edu.sg">GUIGUI88.16@ICHAT.SP.EDU.SG</a><br><br><br>
+           <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids">FACEBOOK</a>
+           <a class="footericonbackground" href="https://plus.google.com/113191452515383494518">GOOGLE</a>
+           <a class="footericonbackground" href="https://twitter.com/blek_salami">TWITTER</a>
+       </article>
+    </footer>
+    </section>
+    <script src="hamburger.js"></script>
+</body>
+</html>

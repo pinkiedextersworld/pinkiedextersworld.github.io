@@ -2,91 +2,91 @@
 <html lang="en">
 
 <head>
-   <title>Blogs Page</title>
-   <!-- 
-         Dexter's Portfolio cum Blog
-         Filename: blogpage.html
-         Author: 1625509
-         Date:  9 November 2016 
-      -->
-   <meta charset="utf-8">
-   <link rel="shotcut icon" href="pics/myicon.ico" />
-   <meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" href="styles.css"> 
-</head>
+    <Title>Dexter Gui</Title>
+    <!--
+        Dexter's Portfolio cum Blog
+        Filename:blogpage.html
+        Author: 1625509
+        Date: 10 Feburary 2017
+    -->
+    <meta charset="utf-8">
+    <link rel="icon" href="pics/myicon.ico" />
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css"> </head>
+
 <body>
-   <section class="maincontainer">
-   <!-- Navigation Bar -->
-      <nav class="nav">
-         <ul>
-            <li><a href="about.html#contact">Contact Me!</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="index.html#photo">Photos</a></li>
-            <li><a href="index.html#blog">Blogs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Home</a></li>
-            <p id="navname"><a href="index.html">Dexter Gui</a></p>
-         </ul>
-      </nav>
-      
-      <!-- Blog 1 -->
-      <article class="blogpagecontainer" id="blogpage1">
-      <p class="blogpostdate"><I>posted on</I>&emsp; <b>NOVEMBER 12, 2016</b></p>
-      <h1>Saturday, Robert's Happy Day.</h1>
-   
-      <figure class="blogpageimg">
-         <img src="pics/blog1.jpg"/>
-      </figure>
-      <p class="blogpagecontent">
-      Hi again! Today is a very important day. can you guess? Today is my pet ant's BIRTHDAY. He/she is now officially 1 year old!!! Im so excited. That's why im rewarding it honey today!!! Happy birthday, Robert! Until next time, my dear fans!</p>
-      </article>
-      
-      <!-- Blog 2 -->
-      <article class="blogpagecontainer" id="blogpage2">
-      <p class="blogpostdate"><I>posted on</I>&emsp; <b>NOVEMBER 11, 2016</b></p>
-      <h1>Cry me a river.</h1>
-   
-      <figure class="blogpageimg">
-         <img src="pics/blog2.jpg"/>
-      </figure>
-      <p class="blogpagecontent">
-      Hi all, today is a very very very sad day... Just this morning, something terrible happened. I could barely bare the immense pain that my nerve endings sent towards me...My vision almost gave in to the pain. My life flashed past me. I was thinking of all the wrong doings in my life... I prayed to god for relieving me of this unbearable pain. The pain that i had brought upon myself, for stubbing my toe on the table leg.</p>
-      </article>
-      
-      <!-- Blog 3 -->
-      <article class="blogpagecontainer" id="blogpage3">
-      <p class="blogpostdate"><I>posted on</I>&emsp; <b>NOVEMBER 10, 2016</b></p>
-      <h1>Was it really worth it?</h1>
-   
-      <figure class="blogpageimg">
-         <img src="pics/blog3.jpg"/>
-      </figure>
-      <p class="blogpagecontent">
-      Hello, my dear fans and follower. This date marks the day that I have made the biggest decision in my life. Just this morning, I woke up just like any other day, however what lies waiting for me was different. This morning, I had to choose between strawberry or chocolate milk for my cereal. I pondered for almost 5 minute! Before coming to the decision of not eating cereal this morning. Was my decision right? Was eating bread because I could not decide which flavour of milk to drink really worth it?</p>
-      </article>
-      
-      <!-- Blog 4 -->
-      <article class="blogpagecontainer" id="blogpage4">
-      <p class="blogpostdate"><I>posted on</I>&emsp; <b>NOVEMBER 9, 2016</b></p>
-      <h1>The memories.</h1>
-   
-      <figure class="blogpageimg">
-         <img src="pics/blog4.jpg"/>
-      </figure>
-      <p class="blogpagecontent">
-      The memories falshed through my brain. The same day last year, something important happened. On this day of last year, I ended the life of a whole colony. On this day last year, I took a lot of lives. What should I do with this memory of taking lives? How should i rid of this memory. This memory of placing ant poison and letting them bring back to their colony. Save me. </p>
-      </article>
-</section>
-   <!-- Footer -->
-   <footer>
-      <figure class="footericons">
-         <a class="footericonbackground" href="https://plus.google.com/113191452515383494518"><img class="footericon" src="logo/google-plus.png" alt="icon for google"/></a>
-         <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids"><img class="footericon" src="logo/facebook.png" alt="icon for facebook"/></a>
-         <a class="footericonbackground" href="https://www.instagram.com/minor.tan/"><img class="footericon" src="logo/instagram-logo.png" alt="icon for instagram"/></a>
-         <a class="footericonbackground" href="https://twitter.com/blek_salami"><img class="footericon" src="logo/twitter-logo-silhouette.png" alt="icon for twitter"></a>
-         <a class="footericonbackground" href="https://www.youtube.com/user/DexterGui"><img class="footericon" src="logo/youtube-logo.png" alt="icon for youtube"/></a>
-      </figure> <a id="footername" href="index.html"><h6 id="footernameh6">Dexter&emsp;Gui</h6></a>
-      <p>&copy; Copyright 2016. All rights reserved.</p>
-   </footer>
+    <section class="maincontainer">
+        <!--Navigation Bar-->
+        <header>
+            <a id="navlogo" href="index.html"><img src="pics/logo.png" alt="Logo" title="Home"/></a>
+        </header>
+        <nav id="navigationbar">
+            <ul>
+               <li><a id="closebtn" onclick="closeNav()">&times;</a></li>
+               <li><a href="index.html" class="navcont">Home</a></li>
+               <li><a href="about.html" class="navcont">About</a></li>
+               <li><a href="blogpage.html" class="navcont">Blogs</a></li>
+               <li><a href="portfolio.html" class="navcont">Portfolio</a></li>
+               <li><a href="about.html#contact" class="navcont">Contact Me</a></li>
+            </ul>
+        </nav>
+        <figure id="menuopen">
+            <span onclick="openNav()">
+                <img src="pics/menu.png" alt="open menu" class="menu"/></span>
+        </figure>
+        <!--Header-->
+        <header id="blogpageheader">
+        <h1>BLOG</h1>
+        <p>Come back everyday for refreshing short blogs.</p>
+        <hr>
+        </header> 
+        <section id="blogpageblogs">
+        <!--Blog1-->
+        <article class="blogsfull">  
+        <h6><b>November 12th, 2016</b></h6>
+        <p><b>Saturday, Robert's Happy Day.</b></p>
+        <p>Hi again! Today is a very important day. can you guess? Today is my pet ant's BIRTHDAY. He/she is now officially 1 year old!!! Im so excited. That's why im rewarding it honey today!!! Happy birthday, Robert! Until next time, my dear fans!</p>
+        <img src="pics/blog1.jpg" alt="mask"/>
+        <hr>    
+        </article>
+        <!--Blog2-->
+        <article class="blogsfull">    
+        <h6><b>November 11th, 2016</b></h6>
+        <p><b>Cry me a river.</b></p>
+        <p>Hi all, today is a very very very sad day... Just this morning, something terrible happened. I could barely bare the immense pain that my nerve endings sent towards me...My vision almost gave in to the pain. My life flashed past me. I was thinking of all the wrong doings in my life... I prayed to god for relieving me of this unbearable pain. The pain that i had brought upon myself, for stubbing my toe on the table leg.</p>
+        <img src="pics/blog2.jpg" alt="wood"/>
+        <hr>    
+        </article>    
+        <!--blog3-->
+        <article class="blogsfull">  
+        <h6><b>November 10th,2016</b></h6>
+        <p><b>Was it really worth it?</b></p>
+        <p>Hello, my dear fans and follower. This date marks the day that I have made the biggest decision in my life. Just this morning, I woke up just like any other day, however what lies waiting for me was different. This morning, I had to choose between strawberry or chocolate milk for my cereal. I pondered for almost 5 minute! Before coming to the decision of not eating cereal this morning. Was my decision right? Was eating bread because I could not decide which flavour of milk to drink really worth it?</p>
+        <img src="pics/blog3.jpg" alt="sheep"/>
+        <hr>
+        </article>
+        <!--blog4-->
+        <article class="blogsfull">  
+        <h6><b>November 9th,2016</b></h6>
+        <p><b>The memories.</b></p>
+        <p>The memories falshed through my brain. The same day last year, something important happened. On this day of last year, I ended the life of a whole colony. On this day last year, I took a lot of lives. What should I do with this memory of taking lives? How should i rid of this memory. This memory of placing ant poison and letting them bring back to their colony. Save me.</p>
+        <img src="pics/blog4.jpg" alt="Hallway"/>
+        <hr>
+        </article>    
+        </section>
+        <!--Footer-->
+    <footer>
+       <a id="footerlogo" href="index.html" title="logo"><img src="pics/logo.png" alt="My logo"/></a>
+        <article id="footerlinks">
+           <a href="mailto:guigui88.16@ichat.sp.edu.sg">GUIGUI88.16@ICHAT.SP.EDU.SG</a><br><br><br>
+           <a class="footericonbackground" href="https://www.facebook.com/majortan.luvskids">FACEBOOK</a>
+           <a class="footericonbackground" href="https://plus.google.com/113191452515383494518">GOOGLE</a>
+           <a class="footericonbackground" href="https://twitter.com/blek_salami">TWITTER</a>
+       </article>
+    </footer>
+    </section>
+    <script src="hamburger.js"></script>
 </body>
 </html>
